@@ -39,6 +39,8 @@ id	rule_string	created_at
 1)	"((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)"	2023-10-01 12:00:00
 2)	"((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"	2023-10-02 12:00:00
 ```
+![Screenshot 2024-10-19 185815](https://github.com/user-attachments/assets/c3d91d36-7bb9-49c8-ab4d-45e23cb72eb5)
+
 # API Design Functions
 1) create_rule(rule_string): Converts a rule string into a Node object representing the corresponding AST.
 
@@ -77,6 +79,7 @@ Run the application:
 ```bash
 myenv\Scripts\activate
 ```
+
 # Usage
 - Access the application through the provided URL (e.g., http://localhost:5000).
 - Follow the API documentation to create and evaluate rules.
