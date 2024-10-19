@@ -35,19 +35,20 @@ rule_string: TEXT NOT NULL
 created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 Sample Rule Entries
 id	rule_string	created_at
-1	"((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)"	2023-10-01 12:00:00
-2	"((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"	2023-10-02 12:00:00
-API Design
-Functions
-create_rule(rule_string): Converts a rule string into a Node object representing the corresponding AST.
+```bash
+1)	"((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)"	2023-10-01 12:00:00
+2)	"((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"	2023-10-02 12:00:00
+```
+# API Design Functions
+1) create_rule(rule_string): Converts a rule string into a Node object representing the corresponding AST.
 
-combine_rules(rules): Takes a list of rule strings and combines them into a single AST, optimizing for efficiency.
+2) combine_rules(rules): Takes a list of rule strings and combines them into a single AST, optimizing for efficiency.
 
-evaluate_rule(data): Evaluates a given AST against provided user attributes and returns True or False.
+3) evaluate_rule(data): Evaluates a given AST against provided user attributes and returns True or False.
 
 # Test Cases
 - The following test cases are implemented to verify the functionality:
-- 
+
 1) Rule Creation: Create individual rules from examples and verify their AST representation.
 2) Rule Combination: Combine example rules and ensure the resulting AST reflects the combined logic.
 3) Rule Evaluation: Implement sample JSON data and test the evaluate_rule function for various scenarios.
