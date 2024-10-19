@@ -57,14 +57,12 @@
                                 <label for="age" class="form-label">Age:</label>
                                 <select id="age" name="age" class="form-control" required>
                                     <option value="" disabled selected>Select Age</option>
-                                    {% for age in range(1, 81) %}
-                                        <option value="{{ age }}">20</option>
-                                    <option value="{{ age }}">30</option>
-                                    <option value="{{ age }}">40</option>
-                                    <option value="{{ age }}">50</option>
-                                    <option value="{{ age }}">60</option>
-                                    <option value="{{ age }}">70</option>
-                                    {% endfor %}
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                    <option value="60">60</option>
+                                    <option value="70">70</option>
                                 </select>
                             </div>
                             <div class="mb-3">
