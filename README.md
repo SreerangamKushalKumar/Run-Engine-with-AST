@@ -70,13 +70,12 @@ cd Run-Engine-with-AST
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+python --version
 ```
 Run the application:
 
 ```bash
-Copy code
-python app.py
+myenv\Scripts\activate
 ```
 # Usage
 - Access the application through the provided URL (e.g., http://localhost:5000).
